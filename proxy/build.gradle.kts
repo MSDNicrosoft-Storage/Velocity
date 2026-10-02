@@ -6,6 +6,12 @@ plugins {
     id("velocity-init-manifest")
     alias(libs.plugins.shadow)
     alias(libs.plugins.fill)
+    id("velocity-publish")
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
 }
 
 application {
